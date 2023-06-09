@@ -1,0 +1,48 @@
+' to denote the set of n-vectors with real elements.
+' This notation reinforces the notion that the coordinates of a vector corre-
+' spond to the direct product of single coordinates. The direct product of two
+' sets is denoted as “⊗”. For sets A and B, it is the set of all ordered doubletons
+' {(a, b), s.t. a ∈ A, b ∈ B},
+
+Declare Function Product ( ByRef C As Integer, ByRef B As Integer, ByRef A As Integer ) As Integer
+
+Type C 
+    Dim CTypes As Integer
+End Type 
+
+Type B 
+    Dim BEvent As Integer
+End Type 
+
+Type A 
+    Dim AObj As Integer
+End Type 
+
+#define A1 011210115255|PEPPER SAUCE TABASCO 57ML|0008|0||S|2.20|A|N|-|N|-|N|N|N|-|N|-|N|N|Y|N
+#define B2 01501513|ROCK SALT|0056|0||S|7.50|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define C3 018341751024|BAREFOOT SAUVIGNON BLANC 75CL|0047|1|9|S|6.99|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define D4 018341751062|BAREFOOT WHITE ZINFANDEL 75CL|0047|1|9|S|6.99|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define E5 018341751109|BAREFOOT MERLOT 75CL|0047|1|9|S|6.99|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define F6 024000001966|DELMONTE PINAPPLE SLICES 435G|0004|0||S|1.29|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define G7 024000025993|DELMONTE PEACH SLICES 420G|0004|0||S|1.19|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define H8 024000080947|DELMONTE MANDARIN SEGMENTS|0004|0||S|1.29|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define I9 024000124023|DELMONTE FRUIT COCKTAIL|0004|0||S|1.19|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define J10 024000124962|DELMONTE PEAR HALVES|0004|0||S|1.19|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define L11 031200168963|OCEAN SPRAY CRANBERRY CLASSIC|0013|0||S|1.39|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define M12 031200452009|OCEAN SPRAY CRANBERRY CLASSIC|0013|0||S|1.89|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define N13 031200468956|OCEAN SPRAY CRANBERRY & MANGO|0013|0||S|1.39|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define O14 037600785020|SPAM 340G|0009|0||S|2.79|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define P15 043647010018|BLACKCURRENT CONSERVE 340G|0025|0||S|2.59|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define Q16 043647030016|MORELLO CHERRY PERSERVE 340G|0025|0||S|2.59|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define R17 043647130013|'SWEET TIP' RASPBERRY 340G|0025|0||S|2.59|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define S18 043647440020|'OLD TIMES' ORANGE MARMALADE|0025|0||S|2.59|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define T19 048256219456|ASTONISH MULTI-PURPOSE CLEANER|0034|0||S|1.49|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define U20 048256291063|ASTONISH ANTIBACTERIAL SURFACE|0034|0||S|1.49|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define V21 048256299557|ASTONISH MOULD & MILDEW SPRAY|0034|0||S|1.49|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define X22 051141347042|2 CLEAR PLASTIC HOOKS|0065|0||S|1.49|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define Z23 071106785030|CLASSIC CHILI CON CARNE MEDIUM|0009|0||S|2.29|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define W24 0711766737832|SCOTCH EGG |0062|0||S|1.29|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define K25 0716053002037|PREPS READY MADE MEAL 380G|0062|0||S|2.99|Z|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+#define Y26 071662083281|8 CRAYOLA WASHABLE MARKERS|0063|0||S|3.69|A|N|-|N|-|N|N|N|-|N|-|N|N|N|N
+
+End
